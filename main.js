@@ -4,10 +4,23 @@ let chilometriPrezzo= 0.21;
 
 
 
-let chilometri= parseInt (prompt ("scrivimi i numeri di chilometri che vuoi percorrere"))
-let età= parseInt (prompt ("scrivimi la tua età"))
+let chilometri= document.getElementById(`chilometri`)
+let età= document.getElementById(`età`)
+let button= document.getElementById(`genera`)
 
-const priceChilometri= 0.21*chilometri;
+/*let chilometriValue= Number(chilometri.value)
+let etàValue= Number (età.value)
+
+const priceChilometri= 0.21*chilometriValue;*/
+
+
+button.addEventListener('click', function(event){
+
+event.preventDefault();
+
+let chilometriValue= Number (chilometri.value)
+let etàValue= Number (età.value)
+const priceChilometri= 0.21*chilometriValue;
 
 if(età<18){
     console.log(`Il totale del biglietto del treno è: ${(priceChilometri*scontoPercentuale).toFixed(2)}`)
@@ -16,3 +29,5 @@ if(età<18){
 } else{
     console.log(`Il totale del biglietto del treno é: ${(priceChilometri).toFixed(2)}`)
 }
+})
+
