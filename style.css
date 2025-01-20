@@ -31,3 +31,15 @@ h1{
     gap: 50px;
     margin-bottom: 50px;
 }
+
+.list-group{
+    display: flex;
+    justify-content: center;
+}
+span{
+    font-weight: bold;
+}
+
+.nascosta{
+    display: none;
+}
