@@ -1,0 +1,33 @@
+h1{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.dati-personali{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+}
+
+.generalità{
+    display: flex;
+    flex-direction: column;
+}
+
+.distanza-km{
+    display: flex;
+    flex-direction: column;
+}
+
+.età-utente{
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
