@@ -35,11 +35,13 @@
     justify-content: center;
     gap: 50px;
     margin-bottom: 50px;
+    padding: 20px;
 }
 
 .list-group{
     display: flex;
     justify-content: center;
+    padding: 20px;
 }
 span{
     font-weight: bold;
