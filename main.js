@@ -31,8 +31,8 @@ button.addEventListener("click", function (event) {
 
   // Genera numeri casuali per la carrozza e il codice CP
 
-  let numeroCarrozza = Math.floor(Math.random() * 10) + 1; // Da 1 a 10
-  let codice = Math.floor(Math.random() * 100000) + 1; // Da 1 a 100000
+  let numeroCarrozza = Math.floor(Math.random() * 10) + 1; 
+  let codice = Math.floor(Math.random() * 100000) + 1; 
 
   // Determina l'offerta e il costo del biglietto
 
