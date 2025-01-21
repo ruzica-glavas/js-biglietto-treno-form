@@ -8,28 +8,34 @@ let button = document.getElementById("genera");
 let nomeCognome = document.getElementById("nome-cognome");
 
 // Elementi della seconda parte
+
 let risultati = document.getElementById("risultati");
 let nomeRisultato = document.getElementById("nome-risultato");
+
 //let nomePasseggero= document.getElementById(`nome-passeggero`)//
+
 let offerta = document.getElementById("offerta");
 let carrozza = document.getElementById("carrozza");
 let codiceCp = document.getElementById("codice-cp");
 let costoBiglietto = document.getElementById("costo-biglietto");
 
 // Aggiungi l'evento click
+
 button.addEventListener("click", function (event) {
   event.preventDefault();
 
-  let chilometriValue = Number(chilometri.value);
+  let chilometriValue = parseInt(chilometri.value);
   let etàValue = età.value;
   let nomeValue = nomeCognome.value.trim();
   const priceChilometri = chilometriPrezzo * chilometriValue;
 
   // Genera numeri casuali per la carrozza e il codice CP
+
   let numeroCarrozza = Math.floor(Math.random() * 10) + 1; // Da 1 a 10
   let codice = Math.floor(Math.random() * 100000) + 1; // Da 1 a 100000
 
   // Determina l'offerta e il costo del biglietto
+
   let offertaTipo = "";
   let costoFinale = "";
 
@@ -48,6 +54,7 @@ button.addEventListener("click", function (event) {
   }
 
   // Aggiorna i contenuti nella seconda parte
+
   nomeRisultato.textContent = nomeValue || "N/D"; // Mostra "N/D" se il nome non è inserito
   codiceCp.textContent = codice;
   carrozza.textContent = numeroCarrozza;
