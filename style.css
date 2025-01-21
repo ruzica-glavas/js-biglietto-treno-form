@@ -43,7 +43,7 @@
 .list-group{
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 30px;
     background-color: white;
     
 }
@@ -55,6 +55,8 @@ span{
 .nascosta{
     display: none;
 }
+
+
 
 
 
