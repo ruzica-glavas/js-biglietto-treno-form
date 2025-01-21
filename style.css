@@ -1,7 +1,12 @@
-h1{
+.container{
+    background-color: #b91547;
+}
+
+.title{
     display: flex;
     justify-content: center;
     font-weight: bold;
+    color: white;
 }
 
 .dati-personali{
