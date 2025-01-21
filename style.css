@@ -13,6 +13,7 @@
     display: flex;
     justify-content: space-between;
     padding: 100px;
+    background-color: white;
 }
 
 .generalità{
@@ -23,6 +24,7 @@
 .distanza-km{
     display: flex;
     flex-direction: column;
+    background-color: white;
 }
 
 .età-utente{
@@ -42,7 +44,10 @@
     display: flex;
     justify-content: center;
     padding: 20px;
+    background-color: white;
+    
 }
+
 span{
     font-weight: bold;
 }
